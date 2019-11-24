@@ -1,11 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Exercise 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final Exercise</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    
+    <header>
+        <img src="src/img/headerlogo.jpeg" id="headerLogo">
+        <!-- NAVI BAR -->
+        <div id="naviBar">
+            <ul>
+                <li><a href="#homePage">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact us</a></li>           
+            </ul>
+        </div>
+            <!-- END NAVI BAR-->
+    </header>
 </head>
 <body>
-    <center>
-        <h1>Final Project</h1>
-    </center>
+    
+
+    <!-- HOMEPAGE -->
+    
+    <div id="homePage">
+            <h1 id="headText">Welcome To Planet Earth</h1>
+        <p>
+            Earth, our home, is the third planet from the sun. 
+            It's the only planet known to have an atmosphere containing free oxygen, oceans of water on its surface and, of course, life.
+        </p>
+        <p>
+            Earth is the fifth largest of the planets in the solar system. 
+            It's smaller than the four gas giants — Jupiter, Saturn, Uranus and Neptune — but larger than the three other rocky planets, Mercury, Mars and Venus.
+        </p>
+        <p>
+            Earth has a diameter of roughly 8,000 miles (13,000 kilometers) and is round because gravity pulls matter into a ball. 
+            But, it's not perfectly round. 
+            Earth is really an "oblate spheroid," because its spin causes it to be squashed at its poles and swollen at the equator.
+        </p>
+        
+    </div>
+    
+    <!-- SLIDER IMAGE -->
+    <div class="sliderImage">
+        <img class="mySlides" src="src/img/slider1.jpeg">
+        <img class="mySlides" src="src/img/slider2.jpeg">
+        <img class="mySlides" src="src/img/slider3.jpg">
+        <div class="buttonImage">
+            <button onclick="plusDivs(-1)">&#10094;</button>
+            <button onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+    </div>
+    <!-- END OF HOMEPAGE -->
+
+    <!-- ABOUT PAGE -->
+    <div id="about">
+        <h1 id="headText">About Planet Earth</h1>
+        <p>Planet earth population consist of approx. 2 billions people. 
+                There are many continents and countries that spread all over the earth.
+                From those many continents and countries, many ethnicities, races, languages, and religions were born.
+                People been all over the earth is living peacefuly, untul certain issues and wars happened.
+                The world war as we called it are already happened twice on earth. The world war I and world war II
+             </p>
+             <p>These wars happened because some of the people on earth are taking advantage over the others.
+                Such as in the need of conquering another countries to obtain their valuable resources and people.
+                Luckily these world wars are over, but there are still many indications that stated that these wars are still happened.
+             </p>
+             <p>
+                 After the world war ended, many countries declared independence.
+                 From there politics were born.
+                 Politic is about how to manage the countries and their resources, thus include governance and resource handling.
+                 Since politic was born, there were many pros and cons about this.
+                 Many people that go to politics is actually managing their countries well.
+                 But still there are some downside to this, that people taking advantage of power in a country.
+
+             </p>
+             <p>Click the button below to see all the continents</p>
+             <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">more..</button>
+             <div id="id01" class="w3-modal">
+                 <div class="w3-modal-content">
+                     <div class="w3-container">
+                         <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                         <h5>Continents:</h5>
+                             <li>America</li>
+                             <li>Asian</li>
+                             <li>Australia</li>
+                             <li>Europe</li>
+                     </div>
+                 </div>
+            </div>
+    </div>
+    <!-- END OF ABOUT PAGE -->
+
+    <!-- CONTACT US PAGE -->
+    <div id="contact">
+        <h1 id="headText">Contact us by fill in below</h1>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Full Name</label>
+              <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+              <label for="email-address">Email Address</label>
+              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+              <label for="message">Message</label>
+              <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <input type="submit" value="Submit">
+          </form>
+    </div>
 </body>
+<script src="src/script/script.js"></script>
 </html>

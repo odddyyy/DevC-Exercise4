@@ -1,0 +1,105 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+  }
+  
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+#headerLogo{
+    width: 1250px;
+    height: 100px;
+}
+
+#headText{
+    text-align: center;
+    font-family: monospace;
+    font-style: italic;
+    border-bottom-style: double;
+}
+
+header{
+}
+#headerLogo{
+    margin-left: -200px;
+    height: 200px;
+}
+
+#naviBar{
+    position: fixed;
+    margin-left: -200px;
+}
+.sliderImage{
+    margin-left: 350px;
+}
+
+.mySlides{
+    width: 250px;
+    height: 150px;
+}
+
+.buttonImage{
+    margin-left: 97px;
+}
+
+.homePage{
+    text-align: left;
+    margin-left: 250px;
+}
+
+p{
+    font-family: helvetica;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+  }
+  
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  body{
+    margin-left: 200px;
+    background-image: url("../img/background.jpg");
+    background-size: 1250px 800px;
+    color: cornsilk;
+}
